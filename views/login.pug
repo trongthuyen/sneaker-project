@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        // displays site properly based on user's device
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;700&display=swap' rel='stylesheet')
+        link(rel='icon' type='image/png' sizes='32x32' href='/images/favicon-32x32.png')
+        title  Sneaker | #{title}
+        link(rel='stylesheet' href='/css/login.css')
+        script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+        script(src='/js/login.js' type="module" defer)
+        // ===============================================================================================
+        // ===============================================================================================
+    body.u-body-gradient-lr
+        .login
+            figure.login__img
+                img(src='/images/image-product-1.jpg' alt='login_img')
+            .login__form-container
+                h2.heading-3.u-mg-bt-big Member Login
+                form.form.login__form(action='#')
+                    .form__group
+                        input.form__email(type='email' placeholder='Email')
+                        svg
+                            use(xlink:href='/icomoon/spirite.svg#icon-envelope')
+                    .form__group
+                        input.form__password(type='password' placeholder='Password')
+                        svg
+                            use(xlink:href='/icomoon/spirite.svg#icon-lock-closed')
+                    .form__group
+                        input.btn.form__btn(type='submit' value='Login')
+                p.login__forgot
+                    | Forgot 
+                    a.login__forgot-username(href='#') Username
+                    |  /
+                    a.login__forgot-password(href='#') Password
+                    | ?
+                a.login__create-account(href='#') Create your Account &rarr;

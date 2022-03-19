@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <title>Login | E-commerce product page</title>
+    <link rel="stylesheet" href="/css/login.css" />
+    <script src="/js/login.js"></script>
+    <!--===============================================================================================-->
+
+    <!--===============================================================================================-->
+  </head>
+  <body class="u-body-gradient-lr">
+    <div class="login">
+      <figure class="login__img">
+        <img src="/images/image-product-1.jpg" alt="login_img" />
+      </figure>
+      <div class="login__form-container">
+        <h2 class="heading-3 u-mg-bt-big">Member Login</h2>
+        <form action="#" class="form login__form">
+          <div class="form__group">
+            <input type="email" class="form__email" placeholder="Email" />
+            <svg>
+              <use xlink:href="/icomoon/spirite.svg#icon-envelope"></use>
+            </svg>
+          </div>
+          <div class="form__group">
+            <input
+              type="password"
+              class="form__password"
+              placeholder="Password"
+            />
+            <svg>
+              <use xlink:href="/icomoon/spirite.svg#icon-lock-closed"></use>
+            </svg>
+          </div>
+          <div class="form__group">
+            <input type="submit" class="btn form__btn" value="Login" />
+          </div>
+        </form>
+        <p class="login__forgot">
+          Forgot <a href="#" class="login__forgot-username">Username</a> /
+          <a href="#" class="login__forgot-password">Password</a>?
+        </p>
+        <a href="#" class="login__create-account"
+          >Create your Account &#8594;</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

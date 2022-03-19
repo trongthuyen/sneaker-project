@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="./js/product-detail.js" defer></script>
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./css/product-detail.css" />
+  </head>
+  <body class="container">
+    <header class="header">
+      <div class="cart-popup cart-popup--hidden header__cart-details">
+        <div class="cart-popup__title">Cart</div>
+        <div class="cart-popup__empty">Your cart is empty</div>
+        <div
+          class="cart-popup__product-container cart-popup__product-container--hidden"
+          data-numofproduct="0"
+        >
+          <!-- <div class="cart-popup__product">
+            <figure class="cart-popup__product-img">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="img" />
+            </figure>
+            <div class="cart-popup__product-details">
+              <p class="cart-popup__product-name">
+                Fall Limited Edition Sneakers
+              </p>
+              <div class="cart-popup__product-prices">
+                <div class="cart-popup__product-price">
+                  $125.00 &times;
+                  <span class="cart-popup__product-quantity">3</span>
+                </div>
+                <div class="cart-popup__product-total">$125.00</div>
+              </div>
+            </div>
+            <div class="cart-popup__product-cancel">
+              <svg>
+                <use xlink:href="./icomoon/spirite.svg#icon-trash"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="cart-popup__product">
+            <figure class="cart-popup__product-img">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="img" />
+            </figure>
+            <div class="cart-popup__product-details">
+              <p class="cart-popup__product-name">
+                Fall Limited Edition Sneakers
+              </p>
+              <div class="cart-popup__product-prices">
+                <div class="cart-popup__product-price">
+                  $125.00 &times;
+                  <span class="cart-popup__product-quantity">3</span>
+                </div>
+                <div class="cart-popup__product-total">$125.00</div>
+              </div>
+            </div>
+            <div class="cart-popup__product-cancel">
+              <svg>
+                <use xlink:href="./icomoon/spirite.svg#icon-trash"></use>
+              </svg>
+            </div>
+          </div> -->
+
+          <button class="btn cart-popup__btn-checkout">Checkout</button>
+        </div>
+      </div>
+      <img src="./images/logo.svg" alt="logo" class="logo" />
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Collections</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Men</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Women</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="user__cart">
+        <!-- <img src="./images/icon-cart.svg" alt="card" class="user__cart-icon" /> -->
+        <svg class="user__cart-icon">
+          <use xlink:href="./images/spirite.svg#icon-shopping-bag"></use>
+        </svg>
+        <span class="user__cart-message user__cart-message--hidden">0</span>
+      </button>
+      <div class="user__avatar-box">
+        <img
+          src="./images/image-avatar.png"
+          alt="User avatar"
+          class="user__avatar"
+        />
+      </div>
+    </header>
+    <!--      Sneaker Company Fall Limited Edition
+    Sneakers  $125.00 50% $250.00 0 Add to cart
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <!-- Product section -->
+    <section class="product">
+      <div class="product__figures">
+        <figure class="product__large-figure">
+          <img src="./images/image-product-1.jpg" alt="large-img" />
+        </figure>
+
+        <div class="product__small-figures">
+          <figure class="product__small-figure product__small-figure--current">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              data-img="./images/image-product-1.jpg"
+              alt="small-img"
+            />
+          </figure>
+          <figure class="product__small-figure">
+            <img
+              src="./images/image-product-2-thumbnail.jpg"
+              data-img="./images/image-product-2.jpg"
+              alt="small-img"
+            />
+          </figure>
+          <figure class="product__small-figure">
+            <img
+              src="./images/image-product-3-thumbnail.jpg"
+              data-img="./images/image-product-3.jpg"
+              alt="small-img"
+            />
+          </figure>
+          <figure class="product__small-figure">
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              data-img="./images/image-product-4.jpg"
+              alt="small-img"
+            />
+          </figure>
+        </div>
+      </div>
+      <div class="product__details">
+        <h2 class="heading-2 product__company-heading">Sneaker Company</h2>
+        <h1 class="heading-1 product__name">Fall Limited Edition Sneakers</h1>
+        <p class="product__description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="product__prices">
+          <div class="product__lasted-price">$125.00</div>
+          <div class="product__discount">50%</div>
+          <div class="product__prep-price">$250.00</div>
+        </div>
+        <div class="product__quantity-box">
+          <svg class="product__icon-adj-quan icon-reduce">
+            <use xlink:href="./icomoon/spirite.svg#icon-minus-outline"></use>
+          </svg>
+          <input type="text" value="1" class="product__quantity" />
+          <!-- <span class="product__quantity">0</span> -->
+          <svg class="product__icon-adj-quan icon-add">
+            <use xlink:href="./icomoon/spirite.svg#icon-add-outline"></use>
+          </svg>
+        </div>
+
+        <button class="btn btn--atc product__btn-atc">
+          <svg>
+            <use xlink:href="./icomoon/spirite.svg#icon-shopping-bag"></use>
+          </svg>
+          <span>Add to cart</span>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

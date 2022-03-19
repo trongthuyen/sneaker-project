@@ -1,0 +1,42 @@
+extends base
+
+block script
+    script(src="/js/product-detail.js" defer)
+block content 
+    section.product
+        .product__figures   
+            figure.product__large-figure
+                img(src=sneaker.image[0] alt='large-img')
+            .product__small-figures
+                figure.product__small-figure.product__small-figure--current
+                    img(src=sneaker.image[0] data-img=sneaker.image[0] alt='small-img')
+                each image in sneaker.image.slice(1)
+                    figure.product__small-figure
+                        img(src=image data-img=image alt='small-img')
+        .product__details
+            h2.heading-2.product__company-heading sneaker Company
+            h1.heading-1.product__name #{sneaker.name}
+            p.product__description #{sneaker.description}
+            
+            .product__prices
+            
+                -if(sneaker.discount)
+                    -const discountPrice= (sneaker.price *(1-sneaker.discount)).toFixed(2)
+                    .product__lasted-price $#{discountPrice}
+                    .product__discount #{Math.round((sneaker.discount*100))}%
+                    .product__prep-price $#{sneaker.price.toFixed(2)}
+                -else
+                    .product__lasted-price $#{sneaker.price.toFixed(2)}
+            
+            .product__quantity-box
+                svg.product__icon-adj-quan.icon-reduce
+                    use(xlink:href='/icomoon/spirite.svg#icon-minus-outline')
+                input.product__quantity(type='text' value='1')
+            
+                svg.product__icon-adj-quan.icon-add
+                    use(xlink:href='/icomoon/spirite.svg#icon-add-outline')
+            
+            button.btn.btn--atc.product__btn-atc
+                svg
+                    use(xlink:href='/icomoon/spirite.svg#icon-shopping-bag')
+                    span Add to cart

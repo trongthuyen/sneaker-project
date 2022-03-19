@@ -1,0 +1,66 @@
+header.header
+  .cart-popup.cart-popup--hidden.header__cart-details
+    .cart-popup__title Cart
+    .cart-popup__empty Your cart is empty
+    .cart-popup__product-container.cart-popup__product-container--hidden(data-numofproduct='0')
+      button.btn.cart-popup__btn-checkout Checkout
+  img.logo(src='/images/logo.svg' alt='logo')
+  nav.nav.header__nav
+    ul.nav__list
+      li.nav__item: a.nav__link(href='#') Collections
+      li.nav__item: a.nav__link(href='#') Men
+      li.nav__item: a.nav__link(href='#') Women
+      li.nav__item: a.nav__link(href='#') About
+      li.nav__item: a.nav__link(href='#') Contact
+  button.user__cart
+    svg.user__cart-icon
+      use(xlink:href='/images/spirite.svg#icon-shopping-bag')
+    span.user__cart-message.user__cart-message--hidden 0
+  .user__avatar-box
+    img.user__avatar(src='/images/image-avatar.png' alt='User avatar')
+
+
+    //- <!-- <div class="cart-popup__product">
+          //-   <figure class="cart-popup__product-img">
+          //-     <img src="./images/image-product-1-thumbnail.jpg" alt="img" />
+          //-   </figure>
+          //-   <div class="cart-popup__product-details">
+          //-     <p class="cart-popup__product-name">
+          //-       Fall Limited Edition Sneakers
+          //-     </p>
+          //-     <div class="cart-popup__product-prices">
+          //-       <div class="cart-popup__product-price">
+          //-         $125.00 &times;
+          //-         <span class="cart-popup__product-quantity">3</span>
+          //-       </div>
+          //-       <div class="cart-popup__product-total">$125.00</div>
+          //-     </div>
+          //-   </div>
+          //-   <div class="cart-popup__product-cancel">
+          //-     <svg>
+          //-       <use xlink:href="./icomoon/spirite.svg#icon-trash"></use>
+          //-     </svg>
+          //-   </div>
+          //- </div>
+          //- <div class="cart-popup__product">
+          //-   <figure class="cart-popup__product-img">
+          //-     <img src="./images/image-product-1-thumbnail.jpg" alt="img" />
+          //-   </figure>
+          //-   <div class="cart-popup__product-details">
+          //-     <p class="cart-popup__product-name">
+          //-       Fall Limited Edition Sneakers
+          //-     </p>
+          //-     <div class="cart-popup__product-prices">
+          //-       <div class="cart-popup__product-price">
+          //-         $125.00 &times;
+          //-         <span class="cart-popup__product-quantity">3</span>
+          //-       </div>
+          //-       <div class="cart-popup__product-total">$125.00</div>
+          //-     </div>
+          //-   </div>
+          //-   <div class="cart-popup__product-cancel">
+          //-     <svg>
+          //-       <use xlink:href="./icomoon/spirite.svg#icon-trash"></use>
+          //-     </svg>
+          //-   </div>
+          //- </div> -->

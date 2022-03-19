@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>Gallery healthy</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+      }
+
+      .element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 24.75%;
+
+        padding: 0.5rem 0;
+      }
+
+      .photo {
+        width: 100%;
+        display: block;
+      }
+
+      .photo:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      .total {
+        /*   background-image: linear-gradient(to right bottom, pink, darken(pink,30%)); */
+        /* background-color:pink; */
+        box-sizing: border-box;
+        background-image: linear-gradient(to right bottom, #e75480, #b94366);
+      }
+
+      .header {
+        text-align: center;
+        padding: 5rem 0;
+        font-size: 1.6rem;
+        color: #ccc;
+      }
+
+      .header__item:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      .header__item--more-space {
+        letter-spacing: 0.3rem;
+      }
+      .container {
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+        display: flex;
+        /* clip-path: polygon(0 0,100% 0,100% 60%,0 60%); */
+        align-items: flex-start;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .element {
+          flex: 0 0 49.8%;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .element {
+          flex: 0 0 100%;
+        }
+      }
+      .btn {
+        margin-top: 1rem;
+        border: none;
+        font-size: 1.2rem;
+        background-color: #eb0e45;
+        border-radius: 100px;
+        transition: transform 0.3s;
+        padding: 1rem 4rem;
+        display: inline-block;
+        /* width: 10%;
+        height: 100%; */
+        text-decoration: none;
+        color: #fff;
+      }
+      .btn:hover {
+        transform: translateY(-0.4rem);
+        cursor: pointer;
+        box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+      }
+      .btn::after {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="total">
+      <header class="header">
+        <h1 class="header__item">Something healthy</h1>
+        <h3 class="header__item header__item--more-space">
+          Nice pictures provides a good life
+        </h3>
+
+        <a class="btn" href="index.html"> Homepage </a>
+      </header>
+      <div class="container">
+        <!-- 1 -->
+        <div class="element">
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEjdm1JEl8JybUoLjEqDthuAnBPcz2WnaHWk3cS5hrFnj9MGM2P0B8f9_0sVKr5RVjuwPSC4_Lp7CWc70QmkNRtn6YwzptczYV9IEgSwVUzRXW7o3EogeP0MDjXautT9n4b_bW2gtPyJNKZB3QSdDD6M30g1wSb4hb0S4DEaLN0vqq3UKDSTABhbYaSQ=s320"
+            alt="yoon 1"
+            class="photo"
+          />
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEj03oTxlTJkVUxwr9we1X-Y4OZoNba9rwwwC0pBsI_j5y6UQB8zGlOf3Cw7HtYtQbBRenQ6LQHeCD1GynIXlr7xrKqj62-cd23eXszZRn2GquG3Geg5AdaJeyZED8Mnn8Oe5DNSrLFSd_-jFSzoyvyTkF5Nu6Xr-qCNyTyFX4GbLgTHreSB4VWmLOQ0=s320"
+            alt=""
+            class="photo"
+          />
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEjb1IYiK9WzOvZopv9UCJHIb8znPO0C8qqUtOJdpoXJW8Mgb4DXCTvklxwxQ5SpW7i91obO7TX9u6Pky-wJhabjAKLTk270T2_6lBaW1h4dZOn7RnkQz4z6rX_DKvM7JZHmLnLE1UAUCfHMMhgYJYk9nPXrv5n6QYjMef9oozC_6dkcG5dNnyvcNY8K=s320"
+            alt=""
+            class="photo"
+          />
+
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEiUt6KpgEigLMJOkLnkKEH2PyT5_IkDpN2MyKPlLVG8sqAc49yzFxeCS2iK0o46WqBXNfFrSgidv7EWVMMLzW8WaRBoEu7wBnArcb2upcd9jlFPmCfwVtvWLuEnxasehSfXEXPp_fMmNfH5L4HYhQm5krIjjPHN7o7W-9LjnxZV2cxrSFWBam73E_xa=s320"
+            alt=""
+            class="photo"
+          />
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEgEaTF959MtlcPWeRGXC3wT1RK-2FpSRIDcdln9Ie7Y_j6Sx1chg6Tb0-ZFXOB9CoyuABepVRnfJcEeGsdLzrPS0tQUGsPvlVDtT_quuKrE7gcGHm-KGETG9jfHuG-40dC_HEapDEiysqrt7FB1rFRsdwesd5cf636bY8rRorJOggcKwykZOdonKyMl=s320"
+            alt=""
+            class="photo"
+          />
+        </div>
+
+        <!-- 2 -->
+        <div class="element">
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEjthmsboxEuSuovIeJm_xeLR3zN005huM3juXOFelZjT1QvALTkEfQ-GTDjGtW1rFKXEVjrfWTMcRzKaPcdYzywqtBvxbN0BLtbjpRoogxtDQfFg8eTQaroK3BFg6w8ZS5DkKf33-xFzfXdqLx_ozEF3KlEXxBGihDgzCF_QXnwg3xSbWIPF5OV5kVf=s320"
+            alt="yoon 1"
+            class="photo"
+          />
+
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEgyMFNr2MoQ5x-x-aKyEYjNTMTUcUdoK0jbNd5l7aPqnjmQl5ITMVJshucCuR8svMppM8hcThCOJU065_Tdt88xgroirAYMSuQA4d2ZVlZhUsuBYpj4CD5kEZ6c6e1Z-QEnKxlJAlmmeyjiL9q9jeNRUsYHFcxPugle-Nz-G7Sz8ZY58gNw-78SvC-D=s320"
+            alt=""
+            class="photo"
+          />
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEimBDP9Zyx3eVrg7yf-IQ6Sb9TeicJXTscmDu7SaJ83Pu7yZmt0zeMcVrGQuAhgf3E-h_75DbGyA9HcGI1fxdLoTxeNFkL7khEBCzHTFTcdQfiWL26sTb9oaWhZ-KhVWYhui_-Iunp3Zp4Tj3FVOwO9qrdtQzOJiUV082zu8e0MqInRDb6jMM00p7MN=s320"
+            alt=""
+            class="photo"
+          />
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEhHDtP9rU6op_4LUYeeaR1Ge4S4G1qUs7PfjO3gKTCgycZ9yiSSd2IHUBQX-xV-o5zrg5QI2Q6vr8JLG7OiVcYkto6etgJhF7ZMJrs0DPkUC3f__XefzHBGUQEOHM-rgMMT8IVTlHgHt8514O7flZQzy5tKgTxODjK8xoDIb2kZbDD5OWCXdOQMSzQJ=s320"
+            alt=""
+            class="photo"
+          />
+
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEghWdrItoj0inCTqpH0o68zNBpYc5hILlMHVn4UAgba6VH93K4duxB57Gkl3LP76JZL72p7NvBkaS9yxA-6QRt-bAtwLf0hAIsMtS7Nv_-LSiqAlK8ND2OVT4QdpOFbmffPsfCndFAzMpg-Yo18tPUOXwjRfSEbm8eUw4TMHm9YSQ9ZEvp35hLNaNQ9=s320"
+            alt=""
+            class="photo"
+          />
+          <!-- 3 -->
+        </div>
+        <div class="element">
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEj66fhVfD4Bl0uH8GVH7rSWmUz7bJDb07T7ppTAOLONKz5pPG1Ty3_-eoHG8sW9BrqW98oln2Xo5smU1yskthbEiE1_VD4l84wzRGCU3E7htqAdnac5FKWFSYlndw8uZ80ar0iC8fyUcsOXS9SRStCjt03gzulatrsNxsiBbyHZ15cSWp8mivZS4xYv=s320"
+            alt=""
+            class="photo"
+          />
+
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEhy80TTa5EzYB8MnftPTfsw-QOSWlqQVcHMmTMKB1DXTbdbtsw9QH33yV_YqS_SKCy_cABcgmnBt5d4inceAJdrdJzxnW66ohzHC2DPpwkJHr7L4JvIzcJHUNL-oXRiaWrHben96yfVr5dRPeNkKcfok_FrBlwWytaH235g0qKXJUwzpCjB2SJY0nhJ=s320"
+            alt=""
+            class="photo"
+          />
+
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEjdtygP0YcvpITcXZV6fu6xuh4DWE6UusO3R3BhbrmF_alduiiVXJTvnErYjxnZYNxqnI-RdFH9rDKKj__PLjJQ49t3fRdZSkCCuho8wO4Lw6ESw_1kYBclSRbBzFmXT1I_pu7YYoCB3dQliuL_wpxgq4zWYud3QNGh979RL85QR4rO5LztiHk0avLJ=s320"
+            alt=""
+            class="photo"
+          />
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEiNOg6e81MpwY2PchysLUDXDZt-TwibbUFbYW8dUXpwkozwg-PQ0dD3MhEA6c98gQLtgcI9975fiePnjcXJQAw9EVRaZQAzNAo2wLRbb1TvclUmNJXbeuNPms-BSSiKdO4ptElnkWVgGYs7QegY1NXIOwGpyflPuNM9AYzYs0pRWhZ2PI7JOTenIfgB=s320"
+            alt="yoon 1"
+            class="photo"
+          />
+
+          <img
+            src="https://1.bp.blogspot.com/-eD2KbpyIyNY/YF8SZBE8dEI/AAAAAAABBX0/SAbrPvH_BeEk7jN7EHR7oY_NjA9IZp85gCLcBGAsYHQ/s0/yoonsayy_1494637251988285652616047351958666142252205n.jpg"
+            alt="yoon 1"
+            class="photo"
+          />
+        </div>
+
+        <div class="element">
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEhP2_W98qti2a8wx5_8kNSUBwhjluwGsYA6pHf5aBA6Aa9zmrsL6U5R1UULfsLjkgXwuSkO0eNci5Zu8SJ4qcJkm2wz7Uv6S-lyruQmeImAqwt-gFVs6_-mDBYCuRQ3-uHRqvJiD1dLHyxl5f-OLzHX8ny3h0GYA06y9qs6U4b8f1Bq2Gwvd7HmWs6Y=s320"
+            alt=""
+            class="photo"
+          />
+          <img
+            src="https://tinhayvip.com/wp-content/uploads/2021/12/kang-in-kyung-coi-bao-de-quang-cao-game-1.jpg"
+            alt=""
+            class="photo"
+          />
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEiY1t7YBhM1ALFkPU4gumBQpFRw0WtrAflIsVkXk6y-W9S4xrFDp8apffQnGNJhQgdg094lqq1EYclTJTcV-kRjR0nPjGo7VxpPUSeBJYecZVuO10qxajptN-Ns0v5TK--ZOrvGdpeKfa2O9ZAiql_wVrF0FJ1-Ydjt_jLKmH72OIdF-BTM9MX4axUu=s320"
+            alt=""
+            class="photo"
+          />
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEj-MqjeDHhKqbHlazZQCHp3SqclLAzp978OxLfdq1yLoJlyXhzGD8yT8T8VI0CLDqFChT3miLVU53Q0E5YpshmEHowPe8g-opr9gbEG_BIL9bWv-x-TsK7iXMC2XtqlWtD9nl5wqCFAy9gLg3ZLKTcGahA02L7khjulkVkPyoHV7gD_-wC-j-m_SSH9=s320"
+            alt=""
+            class="photo"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

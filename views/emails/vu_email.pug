@@ -1,0 +1,18 @@
+extends baseEmail
+block content
+    p Xin chào #{firstname},
+    p Mình là Trần Lương Vũ, đang học môn Thực tập đồ án đa ngành hướng CNPM thuộc nhóm-tổ L01. Hiện tại trong file Excel thầy Trung chia sẻ, mình thấy bạn là sinh viên của khoa Kỹ thuật máy tính và chưa có nhóm, không biết bạn muốn vào nhóm mình không ?  Nhóm mình hiện đang có sẵn 4 bạn CS, có nền tảng cơ bản về Nodejs và .Netcore, đang cần mảnh ghép CE cuối cùng để hoàn thành đội ngũ. ^^
+    p Nếu bạn quan tâm, bạn vui lòng liên hệ với mình qua nick facebook ở link bên dưới nha, chúc bạn có một buổi tối thật vui vẻ. 
+    
+    table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+        tbody
+            tr
+                td(align='left')
+                    table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+                        tbody
+                            tr
+                                td
+                                    a(href=`${url}`, target='_blank') My facebook link
+   
+    p Cảm ơn bạn,
+    p - Vu Tran, 
