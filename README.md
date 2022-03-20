@@ -24,7 +24,7 @@
 This is an application for selling baseball shoes and some baseball shoes accessories. 
 
 Some basic features included in this app 
-   + For customer: buy shoes, payment, modifying individual information, cart-based shipping.
+   + For customer: purchasing shoes, payment, modifying individual information, cart-based shipping.
    + For admin: add more merchandise, manage customer account.
 
 Some security methods for webapp development is also implemented in this app to prevent some types of attack such as SQL Injection Attack, Cross-Site Scripting (XSS), Denial of Service (DoS), parameter polution, brute force attack, compromised database.
