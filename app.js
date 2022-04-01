@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
+const cors = require('cors')
 const cookieParser = require('cookie-parser');
 const rateLimit = require('express-rate-limit');
 const sneakerRouter = require('./routes/sneakerRoutes');
@@ -46,6 +47,8 @@ app.use(express.json({ limit: '10kb' }));
 app.use(mongoSanitize());
 //Data sanitization against XSS
 app.use(xss());
+
+app.use(cors())
 
 app.use(cookieParser());
 
